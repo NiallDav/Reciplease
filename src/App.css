@@ -3,15 +3,35 @@
   background-image: linear-gradient(120deg, #ac63f01f 0%, #62a4e656 100%);
 }
 
+.navi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 100px;
+}
+
+.imgLogo{
+  width: 20vw;
+  height: 100px;
+}
+
+.purple{
+  color: #604f77;
+  font-weight: bold;
+}
+
 .search-form{
   min-height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+  width: 100%;
 }
 
 .search-bar{
-  width: 50%;
+  width: 80%;
   border: none;
   border-radius: 25px;
   filter: drop-shadow(-1px 1px rgba(0, 0, 0, 0.192));

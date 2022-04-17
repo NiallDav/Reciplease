@@ -42,13 +42,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <form onSubmit={getSearch} className='search-form'>
-        <input className='search-bar' type="text" value={search} onChange={updateSearch} placeholder="Search for a recipe or ingredient"/>
-        <button className='search-button' type='submit'><IoSearchCircleSharp size={35}/></button>
-      </form>
+      <nav className='navi'>
+        <img src={require('./images/reciplease.svg').default} alt="RECIPLEASE" className='imgLogo'/>
+        <form onSubmit={getSearch} className='search-form'>
+          <input className='search-bar' type="text" value={search} onChange={updateSearch} placeholder="Search for a recipe or ingredient"/>
+          <button className='search-button' type='submit'><IoSearchCircleSharp size={35}/></button>
+        </form>
+      </nav>
+      
       <div className='resultsRow'>
-        <p className='results'>You searched for "{query}"</p>
-        <p className="results">{recipes.length} recipes found</p>
+        <p className='results'>You searched for "<span className='purple'>{query}</span>"</p>
+        <p className="results"><span className='purple'>{recipes.length}</span> recipes found</p>
       </div>
       
       <div className='recipes'>
